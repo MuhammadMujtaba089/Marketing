@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Reset and Base Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            background-color: #111;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: url('pics/background.jpg'); /* Add your background image path here */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; /
+        }
+
+        /* Background Image */
+        .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('your-background.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            color: #fa920a;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(50, 52, 54, 0.8);
+            padding: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            padding: 3rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            flex-grow: 1;  /* Allows the section to expand and fill available space */
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fa920a;
+        }
+
+        /* About Content */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        /* Company Description */
+        .company-description {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Team Members */
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        /* Team Member Styles */
+        .team-member {
+            background-color: rgba(230, 247, 255, 0.1);
+            padding: 1rem;
+            border: 1px solid #fa920a;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0.7;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+
+        .team-member:hover {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .team-member h3 {
+            color: #fa920a;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: #fff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+            margin-top: auto;  /* Pushes the footer to the bottom */
+        }
+
+        /* Contact Form Styles */
+        #contact {
+            padding: 3rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            border: 1px solid #fa920a;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #fa920a;
+            border: none;
+            padding: 1rem;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #f59e42;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="background-container"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Who We Are</h2>
+        <div class="about-content">
+            <!-- Company Description -->
+            <div class="company-description">
+                <p>
+                    We are a cutting-edge digital marketing agency committed to helping businesses 
+                    grow their online presence and connect with their target audience. Our services 
+                    span across digital marketing, web design, brand strategy, and more. With years 
+                    of experience, our team of experts strives to provide innovative and result-driven 
+                    solutions for every client.
+                </p>
+            </div>
+
+            <!-- Team Members -->
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <img src="pics/ali hashmi.jpg" alt="Team Member 1">
+                    <h3>Ali Hashmi</h3>
+                    <p>Founder & CEO</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <img src="pics/IMG_20231112_132009_Bokeh.jpg" alt="Team Member 2">
+                    <h3>Muhammad Mujtaba</h3>
+                    <p>Lead Designer</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <img src="pics/ahsan mumtaz.JPG" alt="Team Member 3">
+                    <h3>Ahsan Mumtaz</h3>
+                    <p>Marketing Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Viral Vision Advertising. All rights reserved.</p>
+    </footer>
+</body>
+</html>

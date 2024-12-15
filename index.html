@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Advertisement</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section with Logo -->
+    <header>
+        <div class="header-content">
+            <img src="logo white only.png" alt="Business Logo" class="logo">
+            <h1>Welcome to Viral Vision Designing Studio</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="services.html">Services</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Grow Your Business with Us</h2>
+            <p>Innovative solutions to help you succeed</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <a href="digital-marketing.html">
+                    <h3>Digital Marketing</h3>
+                    <p>Boost your online presence with our expert marketing strategies.</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="web-design.html">
+                    <h3>Web Design</h3>
+                    <p>Professional, user-friendly websites that captivate and convert.</p>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="brand-strategy.html">
+                    <h3>Brand Strategy</h3>
+                    <p>We help build strong brands that resonate with your audience.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Viral Vision. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Dropdown Animation -->
+    <script>
+        document.querySelectorAll('.service-item').forEach(item => {
+            item.addEventListener('mouseover', function() {
+                this.classList.add('active');
+            });
+            item.addEventListener('mouseout', function() {
+                this.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

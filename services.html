@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        /* Reset and Base Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            background-color: #111;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: url('pics/background.jpg'); /* Add your background image path here */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; /
+        }
+
+        /* Background Image */
+        .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('your-background.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            color: #fa920a;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(50, 52, 54, 0.8);
+            padding: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Services Section */
+        #services {
+            padding: 3rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            flex-grow: 1;  /* Allows the section to expand and fill available space */
+        }
+
+        #services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fa920a;
+        }
+
+        /* Services List */
+        .services-list {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        /* Service Item Styles */
+        .service-item {
+            background-color: rgba(230, 247, 255, 0.1);
+            padding: 1.5rem;
+            border: 1px solid #fa920a;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0.7;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+
+        .service-item:hover {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-item h3 {
+            color: #fa920a;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item p {
+            margin: 0;
+            color: #fff;
+        }
+
+        /* Dropdown Animation */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            color: #000;
+        }
+
+        .service-item:hover .dropdown-content {
+            display: block;
+            animation: dropdown-animation 0.3s ease;
+        }
+
+        @keyframes dropdown-animation {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+            margin-top: auto;  /* Pushes the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="background-container"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Advertisement Services We Offer</h2>
+        <div class="services-list">
+            <!-- Digital Marketing Service -->
+            <div class="service-item">
+                <h3>Digital Marketing</h3>
+                <p>Grow your online presence and reach your audience effectively.</p>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>SEO (Search Engine Optimization)</li>
+                        <li>PPC (Pay-Per-Click)</li>
+                        <li>Social Media Marketing</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Web Design Service -->
+            <div class="service-item">
+                <h3>Web Design</h3>
+                <p>Professional, responsive websites tailored to your business needs.</p>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Custom Website Design</li>
+                        <li>UI/UX Design</li>
+                        <li>Mobile-Friendly Layouts</li>
+                        <li>E-commerce Websites</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Brand Strategy Service -->
+            <div class="service-item">
+                <h3>Brand Strategy</h3>
+                <p>Build a powerful brand presence that resonates with your customers.</p>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Brand Identity Development</li>
+                        <li>Market Research</li>
+                        <li>Competitive Analysis</li>
+                        <li>Brand Positioning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Advertisement Campaign Management -->
+            <div class="service-item">
+                <h3>Advertisement Campaign Management</h3>
+                <p>Manage and optimize your ad campaigns for maximum ROI.</p>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Target Audience Analysis</li>
+                        <li>Campaign Budgeting</li>
+                        <li>Ad Creative Design</li>
+                        <li>Campaign Optimization & Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Viral Vision Advertising. All rights reserved.</p>
+    </footer>
+</body>
+</html>

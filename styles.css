@@ -1,0 +1,193 @@
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: url('pics/background.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header Content Styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Logo Styles */
+.logo {
+    width: 200px;
+    height: auto;
+    margin-right: 1rem;
+    position: relative;
+}
+
+/* Header Text Styles */
+header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-align: center;
+    flex: 1;
+    font-size: 2rem;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(50, 52, 54, 0.8);
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Services Section Styles */
+#services {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#services h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fa920a;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: rgba(230, 247, 255, 0.1);
+    padding: 1.5rem;
+    border: 1px solid #fa920a;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service-item:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-item h3 {
+    color: #fa920a;
+    margin-bottom: 0.5rem;
+}
+
+/* Change link text color in service items to white */
+.service-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px; /* Smaller logo for mobile */
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
